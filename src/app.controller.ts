@@ -8,7 +8,7 @@ export class AppController {
     private readonly appService: AppService,
   ) { }
 
-  @MessagePattern('fulltimeforce')
+  @MessagePattern('ftf-input')
   sumData(@Payload() payload: number[], @Ctx() context: MqttContext): number {
     console.log(`---NEW Message ${context.getTopic()}---`);
     console.log("Payload: ", payload);
@@ -19,7 +19,7 @@ export class AppController {
     return response;
   }
 
-  @MessagePattern('fulltimeforce2')
+  @MessagePattern('ftf-output')
   logData(@Payload() payload: string, @Ctx() context: MqttContext): string {
     console.log(`---NEW Message ${context.getTopic()}---`);
     console.log("Payload: ", payload);

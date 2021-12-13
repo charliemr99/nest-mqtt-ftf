@@ -13,7 +13,7 @@ export class AppService {
       .setProperties({ userProperties })
       .setQoS(1)
       .build();
-    this.client.send('fulltimeforce2', record).subscribe(res => {
+    this.client.send('ftf-output', record).subscribe(res => {
       console.log('send response: ', res);
     });
   }
