@@ -6,9 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(AppModule, {
     transport: Transport.MQTT,
     options: {
-      subscribeOptions: {
-        qos: 1,
-      },
+      subscribeOptions: { qos: 1 },
       url: 'mqtt://test.mosquitto.org:1883',
     },
   });

@@ -8,13 +8,11 @@ export class AppService {
   ) { }
 
   sendTopic2(response: number) {
-    const userProperties = { 'x-version': '1.0.0' };
     const record = new MqttRecordBuilder(`${response}`)
-      .setProperties({ userProperties })
       .setQoS(1)
       .build();
     this.client.send('ftf-output', record).subscribe(res => {
-      console.log('send response: ', res);
+      console.log('response output: <', res, '>');
     });
   }
 }

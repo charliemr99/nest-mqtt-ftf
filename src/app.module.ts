@@ -10,6 +10,7 @@ import { AppService } from './app.service';
         name: 'TEST_CLIENT',
         transport: Transport.MQTT,
         options: {
+          subscribeOptions: { qos: 1 },
           url: 'mqtt://test.mosquitto.org:1883',
         }
       },

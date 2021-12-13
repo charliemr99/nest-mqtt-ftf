@@ -24,9 +24,6 @@ export class AppController {
     console.log(`---NEW Message ${context.getTopic()}---`);
     console.log("Payload: ", payload);
     console.log("Packet: ", context.getPacket());
-    // const { properties: { userProperties } } = context.getPacket();
-    // console.log("Packet: ", context.getPacket(), " Properties: ", userProperties['x-version'] ?? userProperties['x-version']);
-
     return payload + ` response from logData() in -t ${context.getTopic()}`;
   }
 }
