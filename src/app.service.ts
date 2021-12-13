@@ -8,7 +8,7 @@ export class AppService {
   ) { }
 
   sendTopic2(response: number) {
-    const record = new MqttRecordBuilder(`${response}`)
+    const record = new MqttRecordBuilder(response)
       .setQoS(1)
       .build();
     this.client.send('ftf-output', record).subscribe(res => {
