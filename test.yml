@@ -1,0 +1,229 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\karlo\Desktop\Workspace\Personal\nest-mqtt-ftf
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 254
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 31
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 2123
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\n\r\nTry the new cross-platform PowerShell https://aka.ms/pscore6\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 5
+    content: "\e[25l\e[6;1H\e[?25h"
+  - delay: 1023
+    content: 'PS C:\Users\karlo\Desktop\Workspace\Personal\nest-mqtt-ftf> '
+  - delay: 1032
+    content: "\e[?25l"
+  - delay: 58
+    content: "\e[93me\e[?25h"
+  - delay: 194
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\bex\e[?25h"
+  - delay: 27
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;61Hexh\e[?25h"
+  - delay: 89
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;61Hexho\e[?25h"
+  - delay: 296
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;61Hexh\e[m \b\e[?25h"
+  - delay: 120
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;61Hex\e[m \b\e[?25h"
+  - delay: 116
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;61He\e[m \b\e[?25h"
+  - delay: 149
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\bec\e[?25h"
+  - delay: 132
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;61Hech\e[?25h"
+  - delay: 101
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;61Hecho\e[?25h"
+  - delay: 292
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;61Hecho\e[m \e[?25h"
+  - delay: 171
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;61Hecho\e[m t\e[?25h"
+  - delay: 67
+    content: "\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;61Hecho\e[m te\e[?25h"
+  - delay: 135
+    content: "\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;61Hecho\e[m tes\e[?25h"
+  - delay: 133
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;61Hecho\e[m test\e[?25h"
+  - delay: 1009
+    content: "\b"
+  - delay: 146
+    content: "\b"
+  - delay: 118
+    content: "\b"
+  - delay: 118
+    content: "\b"
+  - delay: 555
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[91m\e[6;59H> \e[93mecho\e[m \e[36m'test\e[6;67H\e[?25h"
+  - delay: 215
+    content: "\e[m\e[1C"
+  - delay: 150
+    content: "\e[1C"
+  - delay: 317
+    content: "\e[1C"
+  - delay: 239
+    content: "\e[1C"
+  - delay: 348
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[6;59H> \e[93mecho\e[m \e[36m'test'\e[?25h"
+  - delay: 579
+    content: "\e[m\r\n"
+  - delay: 49
+    content: test
+  - delay: 18
+    content: "\r\n"
+  - delay: 54
+    content: 'PS C:\Users\karlo\Desktop\Workspace\Personal\nest-mqtt-ftf> '
+  - delay: 2378
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93me\e[?25h"
+  - delay: 199
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\bex\e[?25h"
+  - delay: 120
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[8;61Hexi\e[?25h"
+  - delay: 141
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[92m\e[8;61Hexit\e[?25h"
+  - delay: 123
+    content: "\e[m\r\n"
